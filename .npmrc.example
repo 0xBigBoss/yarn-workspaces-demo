@@ -1,0 +1,13 @@
+# GitHub Package Registry Configuration
+# 
+# To use packages published to GitHub Package Registry:
+# 1. Copy this file to .npmrc
+# 2. Replace YOUR_GITHUB_USERNAME with your actual GitHub username
+# 3. Create a personal access token with `read:packages` scope
+# 4. Set the token as NPM_TOKEN environment variable
+
+@YOUR_GITHUB_USERNAME:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${NPM_TOKEN}
+
+# For CI/CD environments, you can use GITHUB_TOKEN:
+# //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
