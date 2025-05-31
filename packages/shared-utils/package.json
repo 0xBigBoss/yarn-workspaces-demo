@@ -1,6 +1,6 @@
 {
   "name": "@yarn-workspaces-demo/shared-utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Shared utility functions for the workspace",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
