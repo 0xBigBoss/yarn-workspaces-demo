@@ -778,7 +778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarn-workspaces-demo/shared-utils@workspace:0.0.6, @yarn-workspaces-demo/shared-utils@workspace:packages/shared-utils":
+"@yarn-workspaces-demo/shared-utils@workspace:0.0.7, @yarn-workspaces-demo/shared-utils@workspace:packages/shared-utils":
   version: 0.0.0-use.local
   resolution: "@yarn-workspaces-demo/shared-utils@workspace:packages/shared-utils"
   dependencies:
@@ -1841,7 +1841,7 @@ __metadata:
   resolution: "my-app@workspace:apps/my-app"
   dependencies:
     "@types/node": "npm:^20.11.30"
-    "@yarn-workspaces-demo/shared-utils": "workspace:0.0.6"
+    "@yarn-workspaces-demo/shared-utils": "workspace:0.0.7"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5.4.3"
   languageName: unknown
