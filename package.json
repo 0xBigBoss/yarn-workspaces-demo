@@ -1,12 +1,12 @@
 {
   "name": "yarn-workspaces-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
-  "packageManager": "yarn@4.1.1",
+  "packageManager": "yarn@4.9.1",
   "scripts": {
     "build": "yarn workspaces foreach -A run build",
     "test": "yarn workspaces foreach -A run test",
