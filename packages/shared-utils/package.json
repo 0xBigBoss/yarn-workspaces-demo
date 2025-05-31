@@ -1,15 +1,15 @@
 {
   "name": "@yarn-workspaces-demo/shared-utils",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "Shared utility functions for the workspace",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -18,7 +18,8 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
-    "test": "echo \"Test shared-utils\""
+    "test": "echo \"Test shared-utils\"",
+    "postinstall": "echo \"Linking shared-utils\"; sleep 5; echo \"Done\""
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",

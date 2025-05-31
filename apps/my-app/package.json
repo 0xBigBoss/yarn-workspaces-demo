@@ -10,7 +10,7 @@
     "test": "echo \"Test my-app\""
   },
   "dependencies": {
-    "@yarn-workspaces-demo/shared-utils": "workspace:^"
+    "@yarn-workspaces-demo/shared-utils": "workspace:0.0.6"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",

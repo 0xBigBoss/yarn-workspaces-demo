@@ -1,6 +1,11 @@
-import { greet, add, multiply, formatDate, capitalize } from '@yarn-workspaces-demo/shared-utils';
+import { greet, add, multiply, formatDate, capitalize, getVersion, getPackageInfo } from '@yarn-workspaces-demo/shared-utils';
 
 console.log('=== My App Demo ===\n');
+
+// Display package version information
+const packageInfo = getPackageInfo();
+console.log(`Using ${packageInfo.name} v${packageInfo.version}`);
+console.log(`(Direct version check: v${getVersion()})\n`);
 
 // Use the shared utilities
 console.log(greet('world'));
